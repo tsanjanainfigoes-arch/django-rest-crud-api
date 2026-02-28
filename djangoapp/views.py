@@ -19,7 +19,9 @@ def index(request):
    
     elif request.method=="POST":
         return Response("This is POST method")
-
+    
+    elif request.method=="PUT":
+        return Response("This is PUT method")
 
 # python to json convert using serializer
 @api_view(['POST','GET','PUT','PATCH','DELETE'])
